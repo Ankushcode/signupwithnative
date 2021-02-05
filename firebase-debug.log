@@ -1,0 +1,58 @@
+[debug] [2021-01-27T08:46:08.025Z] ----------------------------------------------------------------------
+[debug] [2021-01-27T08:46:08.028Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\HP\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2021-01-27T08:46:08.028Z] CLI Version:   9.2.2
+[debug] [2021-01-27T08:46:08.028Z] Platform:      win32
+[debug] [2021-01-27T08:46:08.029Z] Node Version:  v14.15.4
+[debug] [2021-01-27T08:46:08.030Z] Time:          Wed Jan 27 2021 14:16:08 GMT+0530 (India Standard Time)
+[debug] [2021-01-27T08:46:08.030Z] ----------------------------------------------------------------------
+[debug] [2021-01-27T08:46:08.030Z] 
+[debug] [2021-01-27T08:46:08.042Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-01-27T08:46:08.043Z] > authorizing via signed-in user
+[debug] [2021-01-27T08:46:08.043Z] [iam] checking project roma1-64fc2 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2021-01-27T08:46:08.047Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-01-27T08:46:08.047Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-01-27T08:46:09.778Z] <<< HTTP RESPONSE 200 {"pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","date":"Wed, 27 Jan 2021 08:46:10 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-01-27T08:46:09.785Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/roma1-64fc2:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2021-01-27T08:46:12.713Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 27 Jan 2021 08:46:12 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=1348","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-01-27T08:46:12.724Z] > refreshing access token with scopes: []
+[debug] [2021-01-27T08:46:12.725Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-01-27T08:46:12.891Z] <<< HTTP RESPONSE 200 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Wed, 27 Jan 2021 08:46:13 GMT","expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-01-27T08:46:12.908Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/roma1-64fc2 [none]
+[debug] [2021-01-27T08:46:27.305Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/roma1-64fc2 200
+[debug] [2021-01-27T08:46:27.305Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/roma1-64fc2 {"projectId":"roma1-64fc2","projectNumber":"592606364166","displayName":"roma1","name":"projects/roma1-64fc2","resources":{"hostingSite":"roma1-64fc2","storageBucket":"roma1-64fc2.appspot.com","locationId":"asia-southeast2"},"state":"ACTIVE"}
+[info] 
+[info] === Deploying to 'roma1-64fc2'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2021-01-27T08:46:27.329Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-01-27T08:46:27.330Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-01-27T08:46:27.934Z] <<< HTTP RESPONSE 200 {"expires":"Mon, 01 Jan 1990 00:00:00 GMT","date":"Wed, 27 Jan 2021 08:46:28 GMT","pragma":"no-cache","cache-control":"no-cache, no-store, max-age=0, must-revalidate","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-01-27T08:46:27.945Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/roma1-64fc2/versions  
+ {"config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2021-01-27T08:46:34.334Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 27 Jan 2021 08:46:32 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] i  hosting[roma1-64fc2]: beginning deploy... 
+[info] i  hosting[roma1-64fc2]: found 1 files in build 
+[debug] [2021-01-27T08:46:34.458Z] [hosting] hash cache [YnVpbGQ] not populated
+[debug] [2021-01-27T08:46:34.473Z] > refreshing access token with scopes: []
+[debug] [2021-01-27T08:46:34.473Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-01-27T08:46:34.495Z] [hosting] hash cache [YnVpbGQ] stored for 1 files
+[debug] [2021-01-27T08:46:34.496Z] [hosting][hash queue][FINAL] {"max":9,"min":9,"avg":9,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":37}
+[debug] [2021-01-27T08:46:40.146Z] <<< HTTP RESPONSE 200 {"expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","date":"Wed, 27 Jan 2021 08:46:36 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-01-27T08:46:40.153Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/sites/roma1-64fc2/versions/a06c51eb59ddd147:populateFiles [none]
+[debug] [2021-01-27T08:46:40.154Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/sites/roma1-64fc2/versions/a06c51eb59ddd147:populateFiles {"files":{"/index.html":"750ca770847f25ec1fe8ad1dd3f0fc77fdbee92d0511c74c87ae41e2a4a4c853"}}
+[debug] [2021-01-27T08:46:42.457Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/sites/roma1-64fc2/versions/a06c51eb59ddd147:populateFiles 200
+[debug] [2021-01-27T08:46:42.457Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/sites/roma1-64fc2/versions/a06c51eb59ddd147:populateFiles {"uploadRequiredHashes":["750ca770847f25ec1fe8ad1dd3f0fc77fdbee92d0511c74c87ae41e2a4a4c853"],"uploadUrl":"https://upload-firebasehosting.googleapis.com/upload/sites/roma1-64fc2/versions/a06c51eb59ddd147/files"}
+[debug] [2021-01-27T08:46:42.459Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/roma1-64fc2/versions/a06c51eb59ddd147/files/750ca770847f25ec1fe8ad1dd3f0fc77fdbee92d0511c74c87ae41e2a4a4c853 [none]
+[debug] [2021-01-27T08:46:42.459Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/roma1-64fc2/versions/a06c51eb59ddd147/files/750ca770847f25ec1fe8ad1dd3f0fc77fdbee92d0511c74c87ae41e2a4a4c853 [stream]
+[debug] [2021-01-27T08:46:42.462Z] [hosting][populate queue][FINAL] {"max":7990,"min":7990,"avg":7990,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":7993}
+[debug] [2021-01-27T08:46:42.462Z] [hosting] uploads queued: 1
+[debug] [2021-01-27T08:46:48.015Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/roma1-64fc2/versions/a06c51eb59ddd147/files/750ca770847f25ec1fe8ad1dd3f0fc77fdbee92d0511c74c87ae41e2a4a4c853 200
+[debug] [2021-01-27T08:46:48.015Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/roma1-64fc2/versions/a06c51eb59ddd147/files/750ca770847f25ec1fe8ad1dd3f0fc77fdbee92d0511c74c87ae41e2a4a4c853 [stream]
+[debug] [2021-01-27T08:46:48.016Z] [hosting][upload queue][FINAL] {"max":5558,"min":5558,"avg":5558,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":5558}
+[info] +  hosting[roma1-64fc2]: file upload complete 
+[debug] [2021-01-27T08:46:48.020Z] [hosting] deploy completed after 13678ms
